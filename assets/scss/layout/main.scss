@@ -1,0 +1,99 @@
+// The Main Template
+
+#beeapp, #__layout, #__nuxt, body, html{
+  height: 100%;
+  width: 100%;
+}
+
+#app-pages{
+
+  height: 100%;
+
+  aside{
+	height: 100%;
+  }
+
+  .side-bar{
+
+	height: 100%;
+
+	.logo{
+	  height: 85px;
+	  min-height: 85px;
+	  padding: 10px 8px 0px 8px;
+
+	  display: flex;
+	  align-items: center;
+
+	  .short{
+		display: none;
+	  }
+	}
+
+	// Travar Largura
+	.v-sidebar-menu.vsm_expanded{
+	  width: 250px !important;
+	}
+
+	// Manter a mesma altura
+
+	.vsm--toggle-btn{
+	  height: 51px;
+
+	  i{
+		transition: all 0.3s;
+	  }
+	}
+
+	// Correção nos icones e logo
+	.vsm_collapsed .vsm--toggle-btn i{
+	  transform: rotate(180deg);
+	}
+
+	.vsm_collapsed{
+	  .logo{
+		padding: 2px;
+		height: 96px;
+	  }
+	  .short{
+		display: block;
+	  }
+	  .long{
+		display: none;
+	  }
+	}
+
+  }
+
+  main{
+
+	height: 100%;
+
+	header{
+	  min-height: 85px;
+	  height: 85px;
+
+	  // Dropdown APENAS DENTRO DO HEADER
+	  .dropdown-menu{
+		border-radius: 0px;
+		margin-top: 30px !important;
+		margin-left: -15px !important;
+	  }
+	  // Barra de Busca
+	  .barra-busca{
+		input{
+		  width: 250px !important;
+		  transition: all 0.4s;
+		  &:focus{
+			width: 350px !important;
+		  }
+		}
+	  }
+	}
+
+	footer{
+	  height: 43px;
+	}
+
+  }
+}

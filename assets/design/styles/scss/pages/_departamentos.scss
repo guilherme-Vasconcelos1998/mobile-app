@@ -1,0 +1,24 @@
+/** Modificações Mobile **/
+@media (max-width: 600px) {
+	.painel-esquerda,
+	.painel-direita {
+		width: 100% !important;
+		display: none !important;
+	}
+	.painel-direita {
+		z-index: 0;
+	}
+
+	.painel-esquerda.ativo,
+	.painel-direita.ativo {
+		display: block !important;
+	}
+	.painel-direita {
+		z-index: 0;
+	}
+
+	.multipane-resizer {
+		display: none !important;
+		z-index: 0;
+	}
+}

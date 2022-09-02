@@ -1,0 +1,24 @@
+/**
+* This is the main scss file, load another one here.
+ */
+
+// Bootstrap
+@import "override/bootstrap"; // Override Bootstrap Variables
+@import "~bootstrap/scss/bootstrap";
+@import "override/bootstrap_plus"; // News Classes for BS5
+
+// SideBar
+@import "override/sidebar"; // Override Vue Sidebar Variables
+@import '~vue-sidebar-menu/src/scss/vue-sidebar-menu';
+
+// Fonts
+@import "fonts";
+
+// Layouts
+@import "layout/main"; // The Main Template
+
+// Pages
+@import "auth/login"; // Login Page Style
+
+
+

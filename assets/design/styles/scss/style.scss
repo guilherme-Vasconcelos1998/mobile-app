@@ -1,0 +1,408 @@
+/** Imports **/
+@import 'beeapp';
+//Importando o _oficial
+@import '_oficial';
+//Importanto o _layout
+@import "layout";
+/** Layout de Paginas Específicas **/
+@import "pages/departamentos";
+
+.container-old{
+  max-width: 1024px !important;
+}
+
+.container-med{
+  max-width: 1024px !important;
+}
+
+.btn-primary{
+  color: #FFFFFF !important;
+}
+
+.btn-outline-primary:hover{
+  color: #FFFFFF !important;
+}
+
+/** Reset **/
+html,body, #app{
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+a, a:active, a:visited, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+input[required], select[required]{
+  border-left: 2px solid #B20000;
+}
+
+/** Cabeçalho **/
+
+#app header .logo img{
+  max-width: 110px;
+  height: auto;
+}
+
+#app header nav li{
+  list-style: none;
+  color: #F9F9F9;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+#app header nav li:hover{
+  cursor: pointer;
+  border-bottom: 2px solid #FCDA64;
+}
+
+#app header .acoes a{
+  font-size: 20px;
+  color: #F9F9F9;
+  transition: all 0.3s;
+}
+
+#app header .acoes a:hover{
+  color: #FCDA64;
+}
+
+#app header .acoes a small{
+  font-size: 12px;
+}
+
+/** Main **/
+
+#app main{
+  background-color: #F9F9F9;
+  padding-top: 60px;
+}
+
+.icone_x1{
+  width: 32px;
+  height: 32px;
+}
+
+/** Lista de Ações 01 **/
+.lista_acao_01 li{
+  list-style: none;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #647795;
+}
+
+.lista_acao_01 li:hover{
+  background-color: rgba(0,0,0,.07);
+}
+
+/** Doc **/
+
+.container-doc{
+  max-width: 900px !important;
+}
+
+.doc-capa{
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.doc-crt{
+  margin-top:25px;
+  margin-bottom: 25px;
+}
+
+.doc-crt .img{
+  margin-right: 10px;
+}
+
+.doc-crt .img img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.doc-crt .txt{
+  font-size: 12px;
+  color: #647795;
+  line-height: 1.1em;
+}
+
+.doc-html{
+  color: #2E3643;
+}
+
+
+/** Form Steps (Passo a Passo) **/
+.nav-progress {
+  display: table;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  border: 2px solid #10161B;
+  background-color: #f7f7f7;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.nav-progress > div {
+  position: relative;
+  display: table-cell;
+  padding: 14px 0;
+  color: #1F2B33;
+  text-align: center;
+  font-size: 1.125em;
+  line-height: 1.25em;
+}
+.nav-progress > div.complete {
+  background-color: #1F2B33;
+  color: #FFF;
+}
+.nav-progress > div.complete .arrow {
+  border: 2px solid #10161B !important;
+  background: #1F2B33 !important;
+}
+.nav-progress > div.active {
+  background-color: #FCDA64;
+  color: #10161B;
+}
+.nav-progress > div.active .arrow {
+  background: #FCDA64 !important;
+}
+
+.arrow-wrapper {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.arrow-wrapper .arrow-cover {
+  position: absolute;
+  overflow: hidden;
+  width: 24px;
+  height: 50px;
+}
+.arrow-wrapper .arrow-cover .arrow {
+  position: absolute;
+  left: -34px;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #10161B;
+  background: transparent;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/** Pages **/
+.page-title{
+  font-weight: 200;
+  margin-left: 10px;
+}
+
+#barra-empresa{
+  background-color: #474642 !important;
+  color: #FFF;
+  padding: 10px;
+  font-weight: 200;
+}
+
+#barra-empresa span{
+  color: #fcda64;
+}
+
+/** Cards **/
+
+.card-header{
+  display: flex;
+  align-items: center;
+  background-color: #E8E8E6 !important;
+  border-bottom: 3px solid #FCDA64 !important;
+  box-shadow: 0px 7px 3px 0px rgba(0,0,0,.04);
+}
+
+.card-header .simbolo{
+  height: 22px;
+  margin-right: 5px;
+  margin-top: -5px;
+}
+
+.card-header .card-title{
+  font-size: 1.1em;
+  font-weight: 300;
+}
+
+/** Estrutura */
+.main-panel{
+  position: inherit;
+  width: 100%;
+  float:left;
+}
+
+.navbar-header{
+  background-color: #FFF !important;
+}
+
+.navbar-brand{
+  max-width: 120px !important;
+}
+
+.navbar .link-modulos i{
+  font-size: 20px !important;
+}
+
+
+.navbar-nav{
+  color: #000;
+}
+
+.main-header .navbar-header[data-background-color] .navbar-nav .nav-item .nav-link{
+  color: #000 !important;
+}
+
+#navbarNav .navbar-nav .nav-item .dropdown-menu{
+  box-shadow: 3px -1px 12px 4px rgba(0,0,0,.2) !important;
+  left:80px !important;
+  right: auto;
+}
+
+.main-header .navbar-header[data-background-color] .navbar-nav .nav-item.active .nav-link{
+  background-color: #FFF !important;
+  border-bottom: 2px solid #FBC70F;
+  border-radius: 0px;
+}
+
+.main-header .navbar-header .dropdown-toggle::after{
+  margin-left: 5px !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .form-control{
+  background-color: #FFF !important;
+  color: #4a5568 !important;
+  border: 1px solid rgba(0,0,0,.1) !important;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .form-control:focus{
+  border-bottom: 2px solid #FBC70F !important;
+  border-left: none !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .btn{
+  background-color: #FFF !important;
+  border-left: 1px solid rgba(0,0,0,.1) !important;
+  border-top: 1px solid rgba(0,0,0,.1) !important;
+  border-bottom: 1px solid rgba(0,0,0,.1) !important;
+  box-shadow: -2px 2px 2px rgba(0,0,0,.1);
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group .btn i{
+  color: #FBC70F !important;
+}
+
+.main-header .navbar-header[data-background-color] .nav-search .input-group.focus .btn{
+  border-bottom: 2px solid #FBC70F !important;
+  border-right: none !important;
+}
+
+/** **/
+.bee-tree{
+  margin-top: 20px;
+}
+
+.bee-tree .box-novo{
+  border-style: dashed;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.2);
+  padding: 2px 5px 2px 5px;
+  transition: all .3s;
+  margin-top: 5px;
+  border-left: 3px solid rgba(0,0,0,.2);
+  font-size: 12px;
+  color: rgba(0,0,0,.6);
+}
+
+.bee-tree .box-novo:hover{
+  border-color: rgba(0,0,0,.9);
+  background-color: rgba(0,0,0,.1);
+}
+
+.bee-tree .box-item{
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0,0,0,.2);
+  padding: 2px 5px 2px 5px;
+  transition: all .3s;
+  margin-bottom: 2px;
+}
+
+.bee-tree .box-item:hover{
+  border-color: rgba(0,0,0,.9);
+  background-color: rgba(0,0,0,.1);
+}
+
+/** Modificações Swal **/
+.swal-bee-1 .swal2-image{
+  float: left;
+  position: absolute;
+  top:-100px;
+}
+
+/** Modificações no Bootstrap **/
+
+
+.bee-aviso .card-title{
+  font-size: 15px;
+  padding: 1.25rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  display: flex;
+  align-items: center;
+}
+
+.bee-aviso .card-title img{
+  height: 25px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.btn-group-toggle .active{
+  background-color: #FCDA64 !important;
+  color: #000 !important;
+}
+
+/** Modificações no Editor **/
+
+.bee-line-editor .ce-block__content{
+  max-width: 100%;
+}
+
+.bee-line-editor .ce-inline-toolbar, .bee-line-editor .ce-settings{
+  border: 1px solid rgba(0,0,0,.3);
+  background-color: #474642;
+  transition: all .3s;
+}
+
+.bee-line-editor .ce-inline-tool:hover, .bee-line-editor .ce-settings__button:hover{
+  background-color: #20201E;
+}
+
+.bee-line-editor .ce-toolbar__settings-btn, .bee-line-editor .ce-toolbar__plus{
+  background-color: #20201E;
+  border-radius: 4px;
+}

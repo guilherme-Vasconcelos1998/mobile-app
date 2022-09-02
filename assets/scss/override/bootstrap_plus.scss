@@ -1,0 +1,73 @@
+// Plus to Bootstrap
+
+// Roundeds
+.rounded-bottom-md{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+// Z Index
+
+.z-index-3{
+  z-index: 3;
+}
+
+
+// Max Width
+.max-w-150{
+  max-width: 150px;
+}
+.max-w-200{
+  max-width: 200px;
+}
+
+// Text Colors
+.text-gray-1{
+  color: #606060 !important;
+}
+
+// BG Colors
+
+.bg-light-2{
+  background-color: #EBEFF1;
+}
+
+.bg-light-3{
+  background-color: #F9F9F9;
+}
+
+.bg-secondary-gradient-dark-horizontal{
+  background: $secondary;
+  background: linear-gradient(90deg, $secondary 15%, darken($secondary, 10%) 100%);
+}
+
+.bg-bee-light{
+  background-image: url("/images/bg-01.png");
+  background-size: contain;
+}
+
+// Buttons
+
+.btn-outline-primary:hover{
+  color: #FFF !important;
+}
+
+// Font Spacing
+@for $i from 1 through 5 {
+  .letter-sp-#{$i}{
+	letter-spacing: #{$i}px;
+  }
+}
+
+// Avatar
+$avatar-sizes: 32, 50, 64, 80, 128;
+
+@each $size in $avatar-sizes {
+
+  .avatar-#{$size}{
+	width: #{$size}px;
+	height: #{$size}px;
+  }
+
+}
+

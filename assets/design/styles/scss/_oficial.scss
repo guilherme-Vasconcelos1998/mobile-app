@@ -1,0 +1,157 @@
+/** Geral / Resets **/
+html, body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: auto !important;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/** Scroll Bar **/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #F8DF51;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #9F690F;
+  border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+a, a:active, a:visited, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/** Layout do Nuxt **/
+#__layout, #__nuxt, #app{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+
+/** Tamanhos em Pixel **/
+//Alturas
+.h-50px{
+  height: 50px;
+}
+.h-100px{
+  height: 100px;
+}
+.h-150px{
+  height: 150px;
+}
+
+/** Pequenas Alterações do Bootstrap **/
+// Resolvendo problemas com o Backdrop dos Modais
+.modal-backdrop{
+  display: none !important;
+  position: absolute !important;
+}
+
+.modal.show .modal-dialog{
+  border-radius: 0.3em;
+  	.modal-content{
+	  box-shadow: 0px 0px 20px 10px rgba(0,0,0,.2);
+	}
+
+}
+
+/** Configurações Gerais do MultiPane **/
+.multipane{
+  padding: 0px;
+}
+
+/** Configurações do DXTreeView **/
+.dx-treeview{
+  .dx-treeview-toggle-item-visibility{
+	min-height: 32px;
+	height: 40px;
+	color: #888;
+  }
+
+  .dx-item.dx-state-hover{
+	background-color: #B8C9D3;
+  }
+
+  .dx-treeview-item-without-checkbox.dx-state-focused > .dx-treeview-item{
+	background-color: #1F2B33;
+	color: #FFF;
+  }
+
+}
+
+
+/** Modificações Mobile **/
+@media (max-width:600px){
+  header{
+
+	.mobile-hide{
+	  display: none !important;
+	}
+
+	nav{
+
+	  position: absolute;
+	  top: 0px;
+	  left: 0px;
+	  width: 100%;
+	  height: 100%;
+	  background-color: #1a1a1a;
+	  z-index: 1000;
+	  flex-direction: column;
+
+	  > a{
+		width: 100%;
+		padding: 5px;
+		background-color: rgba(255,255,255,.2);
+		margin-top: 5px;
+		text-align: center;
+	  }
+
+	  li{
+		display: block;
+		width: 100% !important;
+		padding: 3px;
+	  }
+
+	  > .dropdown{
+		width: 100%;
+		margin-top: 5px;
+	  }
+
+	  > .dropdown > a > li{
+		background-color: #FAD862;
+		padding: 5px;
+		color: #1a1a1a;
+		text-align: center;
+	  }
+
+	  > .dropdown .dropdown-menu{
+		width: 100% !important;
+	  }
+
+	  .acoes{
+		margin-top: 10px;
+		margin-left: 0px !important;
+	  }
+
+	}
+  }
+}

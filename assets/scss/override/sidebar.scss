@@ -1,0 +1,12 @@
+$primary-color: $primary;
+$item-hover-color: $white !default;
+$item-hover-bg: $secondary !default;
+$base-bg: #021B38 !default;
+
+// Correção de alguns bugs
+.v-sidebar-menu .vsm--dropdown > .vsm--list{
+  padding: 0px !important;
+}
+.v-sidebar-menu .vsm--link_hover, .v-sidebar-menu .vsm--link:hover{
+  color: #FFF !important;
+}

@@ -1,0 +1,14 @@
+
+/** Layout Admin **/
+// Cabeçalho / Menus
+.home-header {
+	height: 60px;
+	position: relative;
+}
+
+.home-header nav li {
+	list-style: none;
+	color: #fff;
+	display: flex;
+	align-items: center;
+}
